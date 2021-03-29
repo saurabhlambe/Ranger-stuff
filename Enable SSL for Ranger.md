@@ -4,7 +4,7 @@
 
 ### 2. Create self-signed certificate in the Ranger admin host:
 ```cd /etc/ranger/admin/conf
-keytool -genkey -keyalg RSA -alias ranger-admin -keystore ranger-admin-keystore.jks -storepass changeit -validity 360 0keysize 2048
+keytool -genkey -keyalg RSA -alias ranger-admin -keystore ranger-admin-keystore.jks -storepass changeit -validity 360 -keysize 2048
 ```
 In the above command, enter the FQDN of Ranger admin host for the 'Common Name' field (What is your first and last name).
 
